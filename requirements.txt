@@ -1,0 +1,9 @@
+bcrypt~=3.2.2
+Flask~=2.2.1
+SQLAlchemy~=1.4.41
+Flask-Cors
+Flask-JWT-Extended
+Flask-SQLAlchemy
+gunicorn
+psycopg2
+psycopg2-binary
