@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from flask_sqlalchemy import SQLAlchemy
+import pymysql
 from flask import Flask
 
 #static_folder=str(Path().resolve()/ "dist"),static_url_path=""
