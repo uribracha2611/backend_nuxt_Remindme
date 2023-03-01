@@ -17,7 +17,7 @@ app.config["JWT_SECRET_KEY"] = os.environ["SECRET_KEY"]
 
 
 
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"].replace("://", "ql://", 1)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"]
 
 db=SQLAlchemy(app)
 class Users(db.Model):
