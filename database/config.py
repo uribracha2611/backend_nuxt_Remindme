@@ -23,7 +23,7 @@ db=SQLAlchemy(app)
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     username = db.Column(db.String(255), unique=True, nullable=False)
-    password = db.Column(db.String,nullable=False)
+    password = db.Column(db.String(255),nullable=False)
     def __init__(self,username,password):
         self.username=username
         self.password=password
@@ -32,8 +32,8 @@ class Reminders(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     userid = db.Column(db.Integer, nullable=False)
     caseid = db.Column(db.Integer, nullable=False)
-    task = db.Column(db.String, nullable=False)
-    summery = db.Column(db.String, nullable=False)
+    task = db.Column(db.String(255), nullable=False)
+    summery = db.Column(db.String(255), nullable=False)
     due_date=db.Column(db.Date)
     def __init__(self,userid,caseid,task,summery,due_date):
         self.userid=userid
